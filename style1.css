@@ -1,0 +1,234 @@
+/* style1.css */
+
+/* Reset default browser styles */
+body, h4, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffffcd;
+}
+
+/*  */
+
+
+
+body {
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-box {
+    width: 50px;
+    height: 50px;
+    background-color: #f0ad4e; /* Yellow background */
+    border-radius: 10px;
+}
+
+header h3 {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Iframe styles */
+iframe {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+iframe:hover {
+    transform: scale(1.24);
+}
+
+/* Form styles */
+form {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+form h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form h4:hover {
+    border-color: #0056b3;
+    transform: scale(1.02);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"] {
+    width: calc(50% - 15px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="date"]:hover {
+    border-color: #007bff;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: #ccc;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* .footer-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+
+
+/*  */
+
+
+/* I can add my footer back from the next page file */
+
+button {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    
+    /* Center the button horizontally */
+    display: block; /* Change display to block */
+    margin: 0 auto; /* Auto margins horizontally center the block */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #b97829; /* Darker blue on hover */
+    transform:scale(1.2)
+
+}
+
+/* Focus effect */
+button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(162, 205, 235, 0.799); /* Custom focus style */
+}
+
+/* Disabled state */
+button:disabled {
+    background-color: #bdc3c7; /* Light gray background */
+    color: #7f8c8d; /* Gray text */
+    cursor: not-allowed; /* Not allowed cursor */
+}
+
+
+
+a:link {
+    color: #f7f7f7;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #f7f7f7;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #f7f7f7;
+    background-color: transparent;
+    text-decoration: underline;
+  }
